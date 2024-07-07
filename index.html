@@ -117,7 +117,7 @@
               <ul>
                 <li>
                   <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Layanan Berkualitas Tinggi <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                  <div id="accordion-list-1" class="collapse" data-bs-parent=".accordion-list">
                     <p>
                       Kami berkomitmen untuk memberikan layanan berkualitas tinggi yang dapat memenuhi kebutuhan dan harapan Anda. Tim kami bekerja keras untuk memastikan setiap detail dikelola dengan sempurna.
                     </p>
@@ -335,6 +335,43 @@
       <li data-filter=".filter-pelajaran">Pelajaran</li>
     </ul>
 
+    <style>
+      #portfolio-flters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    #portfolio-flters li {
+      margin: 5px 10px;
+      padding: 10px 20px;
+      background: #f8f8f8;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    #portfolio-flters li:hover {
+      background: #ddd;
+    }
+
+    #portfolio-flters .filter-active {
+      background: #007bff;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      #portfolio-flters li {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+
+    </style>
+    
     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
         
       <div class="col-lg-4 col-md-6 portfolio-item filter-novel">
@@ -653,7 +690,7 @@
       <ul>
         <li data-aos="fade-up" data-aos-delay="100">
           <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Apa itu sistem berbasis web? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-          <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+          <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
             <p>
               Sistem berbasis web adalah platform yang memungkinkan pengguna untuk mengakses aplikasi atau layanan melalui web browser, tanpa memerlukan instalasi perangkat lunak tambahan di perangkat pengguna.
             </p>
